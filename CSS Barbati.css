@@ -1,0 +1,574 @@
+/*start Setari de baza*/
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-size: 16px;
+}
+
+body {
+    background-image: url("images/Background.jpg"); /*backgroundul paginii*/
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+	background-size: cover; 
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+header{
+	background-color: white; /*culoare background header*/
+}
+
+nav{
+	background-color: black; /*culoare background meniu*/
+}
+
+li{
+	list-style: none;
+	padding-bottom: 10px; /*spatiere intre optiunile meniului jos*/
+	text-align: left; /*aliniere la stanga optiunile meniului*/
+	font-size: 20px; /*dimensiune optiunile meniului*/
+}
+
+nav li a{
+	color: aliceblue; /*culoare optiunile meniului*/
+	
+}
+/*sfarsit Setari de baza*/
+
+
+/*Start CSS Header*/
+.logo{
+	width: 150px; /*dimensiune logo*/
+}
+
+.current-page a{
+	color: red; /*culoare optiune pagina curenta in care te afli*/
+}
+
+#primary-menu{
+	display: none; /*optiunile meniului sunt ascunse pana cand user-ul apasa pe meniul hamburger*/
+}
+
+.icon{ /*proprietati pictograma hamburger*/
+	float: right;
+	color: red;
+	font-size: 1.5rem;
+    margin-top:-3rem;
+    margin-right:2rem;
+}
+
+.slideshow{
+	display: none; /*pe telefon Carousel-ul cu imagini nu apare*/
+}
+/*sfarsit CSS Header*/
+
+
+/*start CSS sectiunea cu articole*/
+h2{ /*proprietati titlu h2*/
+	color: black;
+	margin-top: 2rem;
+	margin-left: 2rem;
+	background-color: rgb(255, 255, 255, 0.8);
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	margin-right: 2rem;
+	font-size: 17px;
+	text-align: center;
+	padding: 12px 16px;
+}
+
+div#myBtnContainer{ /*spatiere de la marginea de jos si stanga pentru titlu (h2)*/
+	margin-top: 1rem;
+	margin-left: 2rem;
+}
+
+div.row{ /*spatiere de la marginea stanga si dreapta pentru articloe (incaltaminte)*/
+  margin-left: 1.2rem; 
+  margin-right: 2rem;
+}
+
+.row {
+  margin: 8px -16px; /*spatiere intre articole*/
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%; /*pe telefon  articolele sunt una sub cealalta, deci ocupa 100% latime*/
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+    padding: 12px 16px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: rgb(0, 0, 0, 0.7);
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  color: white;
+}
+/*sfarsit CSS sectiunea cu articole*/
+
+
+/*start CSS Marci Inregistrate*/
+.accordion {
+	background-color: rgb(255, 255, 255, 0.5); /*background alb putin transparent, adica 0.5 procente*/
+	color: black; /*culoarea scrisului*/
+	cursor: pointer;
+	padding: 1rem;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 20px;
+	font-weight: 800;
+	transition: 0.4s;
+	padding-left: 2rem;
+  }
+
+.brand{ /*spatiere de la marginea de jos, stanga, dreapta pentru fiecare brand in parte*/
+	  margin-left: 2.2rem;
+	  margin-right: 2.2rem;
+	  margin-top: 1.5rem;
+  }
+  
+  .active, .accordion:hover {
+	background-color: black; /*culoare background brand active*/
+	color: white;
+  }
+
+  .btn.active, .accordion:hover {
+	color: white; /*culoare text brand activ*/
+  }
+  
+  .panel {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	display: none;
+	overflow: hidden;
+  }
+
+  .panel p{ /*proprietati CSS paragrafe Marci Inregistrate*/
+	  font-size: 20px;
+	  margin-right: 2rem;
+	  margin-bottom: 1rem;
+	  color: white;
+  }
+
+  .background{
+	  background-color: rgb(0, 0, 0, 0.8); /*backgroundu-ul paragrafelor este negru si putin transparent*/
+  }
+
+#addidas{ /*Background Addidas*/
+	background-image: url("Imagini Barbati/Background Addidas.jpg"); 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+	background-size: cover;
+  }
+
+#puma{ /*Background Puma*/
+	background-image: url("Imagini Barbati/Background Puma.jpg"); 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+	background-size: cover;
+  }
+
+#dg{ /*Background Dolce&Gabbana*/
+	background-image: url("Imagini Barbati/Background D&G.jpg"); 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+	background-size: cover;
+  }
+/*sfarsit CSS Marci Inregistrate*/
+
+
+/*start proprietati CSS footer*/
+.footer-distributed{
+    background-color: rgba(0,0,0,0.85); /*culoarea background-ului subsolului va fi negru si putin transparent*/
+	width: 100%;
+	text-align: left;
+	font: bold 16px;
+	padding: 10px 50px;
+	margin-top: 30px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+/*proprietati footer coloana 1*/
+.footer-distributed .footer-left{
+	width: 40%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  white;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+/*proprietati footer coloana 2*/
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color:  red;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  red;
+}
+ 
+/*proprietati footer coloana*/
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  aliceblue;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  white;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/*efect Hover link-uri social media*/
+.footer-icons a::before {
+	content: '';
+	transition: .5s;
+	transform: scale(.9);
+  }
+  
+  .footer-icons a:hover::before {
+	transform: scale(1.1);
+	box-shadow: 0 0 15px red;
+  }
+  
+  .footer-icons a:hover {
+	box-shadow: 0 0 5px red;
+	text-shadow: 0 0 5px red;
+  }
+ 
+ 
+ /*start responsive footer for tablet and phone*/
+@media (max-width: 980px) {
+	.footer-distributed{
+		font: bold 14px;
+	}
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+    }
+}
+
+
+/*responsive pentru tableta toate elementele cu exceptia subsolului (footer-ului)*/
+@media (min-width: 768px){
+	/*start Setari de baza*/
+	.icon{
+		display: none; /*cand ecranul depaseste dimensiunea unui telefon, pictograma hamburger nu mai apre*/
+	}
+
+	#primary-menu{
+		display: block;
+	}
+
+	li{
+		display: inline-block;
+	}
+
+	nav{
+		background-color: initial;
+		display: inline-block;
+		width: 80%;
+		text-align: right;
+	}
+
+	header{
+		background: white;
+	}
+
+	nav li a{
+		color: #181818;
+		font-weight: bold;
+		font-size: 1.1rem;
+		margin:1rem;
+	}
+
+	.logo{
+		width: 15%;
+	}
+	/*sfarsit Setari de baza*/
+
+
+	/*start Carousel cu imagini*/
+	.slideshow{
+		display: initial;
+		width: 100%;
+		position: relative;
+	 	margin:2rem auto 1rem auto;
+	}
+
+	/* The dots/bullets/indicators */
+	.dot {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.dots{
+		text-align: center;
+		position:relative;
+		bottom:5rem;
+	}
+
+	.active {
+	  background-color: #717171;
+	}
+
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+
+	@keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+
+	.mySlides{
+		width: 100%;
+		height: 60vh;
+		display: none;
+	}
+
+	.mySlides img{
+		width: 100%;
+		object-fit: cover;
+	  	object-position: center; 
+	  	height: 60vh;
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+
+	/* Next & previous buttons */
+	.prev, .next {
+	  cursor: pointer;
+	  position: relative;
+	  bottom: 1rem;
+	  text-align: center;
+	  left: calc(50% - 115px);
+	  margin:0 2rem;
+	  width: auto;
+	  padding: 16px;
+	  color: red;
+	  font-weight: bold;
+	  font-size: 2rem;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	  background-color: rgba(0,0,0,0.8);
+	}
+	/*sfarsit Carousel cu imagini*/
+
+	h2{ /*proprietati titlu h2*/
+		font-size: 30px;
+	}
+
+	/* Style the buttons */
+.btn { /*dimensiunea butoanelor pentru categoriile de articole*/
+	font-size: 25px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+	width: 30%; /*pe tabelta se vor forma coloane de 3x3*/
+	font-size: 17px;
+  }  
+}
+
+
+/*responsive pentru desktop*/
+@media (min-width: 1024px){
+	.logo{
+		width: 13%;
+	}
+
+	nav li a{
+		font-size: 1.7rem;
+		margin:1rem;
+	}
+
+	/* Create three equal columns that floats next to each other */
+	.column {
+		width: 25%; /*pe tabelta se vor forma coloane de 4x4*/
+	  }
+}
