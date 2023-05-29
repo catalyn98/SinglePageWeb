@@ -23,7 +23,7 @@ This web page requires a [web browser](https://en.wikipedia.org/wiki/Web_browser
 $ git clone https://github.com/catalyn98/SinglePageWeb.git
 ```
 
-Screenshot
+# Screenshot
 <p align="center">
   <img src="https://github.com/catalyn98/SinglePageWeb/blob/main/captura%20de%20ecran.png" />
 </p>
